@@ -1,0 +1,6 @@
+{
+  "name": "OperateX AI — E-Commerce Commission & Delegation Hub",
+  "description": "Multi-role platform where merchants upload products & delegate customer support, tracking, and operations, while agents earn guaranteed commissions powered by Gemini AI copilots.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
