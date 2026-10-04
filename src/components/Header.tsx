@@ -1,5 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
+import { PWAInstallButton } from './PWA/PWAInstallButton';
 import { ShoppingBag, ArrowUpRight, ShieldCheck, RefreshCw } from 'lucide-react';
 
 interface HeaderProps {
@@ -64,8 +65,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWithdraw, onOpenCart }) =>
           </button>
         </nav>
 
-        {/* Zone 3: Wallet / Payout Action & Cart */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        {/* Zone 3: Install App, Wallet / Payout Action & Cart */}
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          <PWAInstallButton />
+
           <button
             onClick={resetDemoData}
             title="Reset sample data"
